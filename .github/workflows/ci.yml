@@ -1,8 +1,11 @@
 name: Node.js CI
-on: 
+on:
   pull_request:
-    branches: 
-      - develop 
+    branches:
+      - develop
+strategy:
+  matrix:
+    node-version:: ["16", "18"]
 jobs:
   check-application:
     runs-on: ubuntu-latest
@@ -11,7 +14,6 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: ${{matrix.node-version}}
       - run: npm install
       - run: npm test
-        
