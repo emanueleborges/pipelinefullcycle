@@ -1,7 +1,7 @@
 const calcular = require('./calc');
 
 test('soma 1 + 2 igual a 3', () => {
-    expect(calcular(1, 2, '+')).toBe(3);
+    expect(Calcular(1, 2, '+')).toBe(3);
 });
 
 test('subtrai 5 - 2 igual a 3', () => {
