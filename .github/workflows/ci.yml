@@ -3,12 +3,14 @@ on:
   pull_request:
     branches:
       - develop
-strategy:
-  matrix:
-    node-version:: ["16", "18"]
+  
 jobs:
   check-application:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:: [14, 16]
+
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
