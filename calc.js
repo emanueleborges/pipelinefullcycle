@@ -1,4 +1,4 @@
-function calcular(num1, num2, operador) {
+function Calcular(num1, num2, operador) {
     switch (operador) {
         case '+':
             return num1 + num2;
@@ -13,4 +13,4 @@ function calcular(num1, num2, operador) {
     }
 }
 
-module.exports = calcular;
+module.exports = Calcular;
