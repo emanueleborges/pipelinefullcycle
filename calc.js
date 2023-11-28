@@ -1,5 +1,5 @@
 function calcular(num1, num2, operador) {
-    switch(operador) {
+    switch (operador) {
         case '+':
             return num1 + num2;
         case '-':
