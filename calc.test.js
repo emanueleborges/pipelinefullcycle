@@ -14,7 +14,6 @@ test('divide 10 / 2 igual a 5', () => {
 test('divide 5 / 0 retorna "Divisão por zero!"', () => {
     expect(calcular(5, 0, '/')).toBe('Divisão por zero!');
 });
-
 test('usa operador inválido retorna "Operador inválido"', () => {
     expect(calcular(4, 5, '?')).toBe('Operador inválido');
 });
